@@ -32,6 +32,7 @@ galleries.each do |url|
     img_src     = image[0]['src']
     img_alt     = image[0]['alt']
     img_counter = img_counter + 1
+    # Downloading image to the File System
     File.open("#{img_alt} - #{img_counter}.jpg", "w+") do |file|
       # puts Dir.pwd
       # File.join(Dir.pwd, "file.txt")
