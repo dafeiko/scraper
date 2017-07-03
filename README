@@ -1,0 +1,18 @@
+# Erotic Web Scraper::Version 2.0
+# => Features: downloading images from provided galleries urls
+# => Ideas to improvements:
+#     > make it smarter and universal/conditional
+#     > requests delaying/timing
+#     > sheluding download/planned jobs
+#     > make it cli executable with arguments
+#
+# https://stackoverflow.com/questions/2263540/how-do-i-download-a-binary-file-over-http
+# https://stackoverflow.com/questions/6768238/download-an-image-from-a-url
+# https://gist.github.com/johnjohndoe/4301582
+# https://stackoverflow.com/questions/2515931/how-can-i-download-a-file-from-a-url-and-save-it-in-rails
+# https://launchschool.com/books/ruby/read/files
+
+
+# Sometimes it is worth having files/images that were embedded into comments/etc on your own server. Here’s an easy way on how to do it.
+# https://mensfeld.pl/2013/12/rails-paperclip-open-uri-downloading-files-from-the-internet-and-saving-them-with-paperclip/
+# https://stackoverflow.com/questions/4362040/why-does-using-openuri-to-download-a-file-result-in-a-partial-file
