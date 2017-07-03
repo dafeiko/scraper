@@ -2,8 +2,8 @@ require 'open-uri'
 require 'nokogiri'
 
 # Feeding Models Galleries URLs
-feedlist  = File.open('urls')
-base_url  = 'http://www.babeimpact.com'
+feedlist = File.open('urls')
+base_url = 'http://www.babeimpact.com'
 
 # Packaging URLs into galleries URLs array
 galleries = []
@@ -27,11 +27,11 @@ galleries.each do |url|
   # Download each individual image from a gallery
   img_counter = 0
   images.each do |url|
-    img_page     = Nokogiri::HTML(open(url))
-    image        = img_page.xpath("//div[@class='image-wrapper']/a/img")
-    img_src      = image[0]['src']
-    img_alt      = image[0]['alt']
-    img_counter  = img_counter + 1
+    img_page    = Nokogiri::HTML(open(url))
+    image       = img_page.xpath("//div[@class='image-wrapper']/a/img")
+    img_src     = image[0]['src']
+    img_alt     = image[0]['alt']
+    img_counter = img_counter + 1
     File.open("#{img_alt} - #{img_counter}.jpg", "w+") do |file|
       # puts Dir.pwd
       # File.join(Dir.pwd, "file.txt")
